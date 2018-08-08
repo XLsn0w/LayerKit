@@ -15,6 +15,7 @@
 		66C60BB7211AF56300B63F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BB6211AF56300B63F8F /* main.m */; };
 		66C60BC1211AF56300B63F8F /* LayerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BC0211AF56300B63F8F /* LayerKitTests.m */; };
 		66C60BCC211AF56300B63F8F /* LayerKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BCB211AF56300B63F8F /* LayerKitUITests.m */; };
+		66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		66C60BC7211AF56300B63F8F /* LayerKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayerKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C60BCB211AF56300B63F8F /* LayerKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerKitUITests.m; sourceTree = "<group>"; };
 		66C60BCD211AF56300B63F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C60BD9211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+RepeatTimeInterval.h"; sourceTree = "<group>"; };
+		66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RepeatTimeInterval.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		66C60B9B211AF56200B63F8F = {
 			isa = PBXGroup;
 			children = (
+				66C60BD9211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.h */,
+				66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */,
 				66C60BA6211AF56200B63F8F /* LayerKit */,
 				66C60BBF211AF56300B63F8F /* LayerKitTests */,
 				66C60BCA211AF56300B63F8F /* LayerKitUITests */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
 				66C60BB7211AF56300B63F8F /* main.m in Sources */,
 				66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */,
