@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
+		6677A43E211D2DD6006EEC09 /* DrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A431211D2DD6006EEC09 /* DrawImage.m */; };
+		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
+		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
+		6677A441211D2DD6006EEC09 /* XZView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A436211D2DD6006EEC09 /* XZView.m */; };
+		6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43A211D2DD6006EEC09 /* ImageScrollView.m */; };
+		6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43C211D2DD6006EEC09 /* TiledImageView.m */; };
+		6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A445211D2E08006EEC09 /* LayerViewController.swift */; };
 		66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BA8211AF56200B63F8F /* AppDelegate.m */; };
 		66C60BAC211AF56200B63F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BAB211AF56200B63F8F /* ViewController.m */; };
 		66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C60BAD211AF56200B63F8F /* Main.storyboard */; };
@@ -36,6 +44,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6677A42F211D2DD6006EEC09 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		6677A430211D2DD6006EEC09 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		6677A431211D2DD6006EEC09 /* DrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImage.m; sourceTree = "<group>"; };
+		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		6677A433211D2DD6006EEC09 /* SelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
+		6677A434211D2DD6006EEC09 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		6677A435211D2DD6006EEC09 /* DrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImage.h; sourceTree = "<group>"; };
+		6677A436211D2DD6006EEC09 /* XZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZView.m; sourceTree = "<group>"; };
+		6677A437211D2DD6006EEC09 /* TiledImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledImageView.h; sourceTree = "<group>"; };
+		6677A438211D2DD6006EEC09 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		6677A439211D2DD6006EEC09 /* XZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZView.h; sourceTree = "<group>"; };
+		6677A43A211D2DD6006EEC09 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		6677A43B211D2DD6006EEC09 /* SelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
+		6677A43C211D2DD6006EEC09 /* TiledImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledImageView.m; sourceTree = "<group>"; };
+		6677A444211D2E07006EEC09 /* LayerKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayerKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		6677A445211D2E08006EEC09 /* LayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
 		66C60BA4211AF56200B63F8F /* LayerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C60BA7211AF56200B63F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66C60BA8211AF56200B63F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,13 +132,29 @@
 			children = (
 				66C60BA7211AF56200B63F8F /* AppDelegate.h */,
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
+				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
+				6677A435211D2DD6006EEC09 /* DrawImage.h */,
+				6677A431211D2DD6006EEC09 /* DrawImage.m */,
+				6677A434211D2DD6006EEC09 /* DrawView.h */,
+				6677A42F211D2DD6006EEC09 /* DrawView.m */,
+				6677A438211D2DD6006EEC09 /* DrawViewController.h */,
+				6677A432211D2DD6006EEC09 /* DrawViewController.m */,
+				6677A430211D2DD6006EEC09 /* ImageScrollView.h */,
+				6677A43A211D2DD6006EEC09 /* ImageScrollView.m */,
+				6677A43B211D2DD6006EEC09 /* SelectorViewController.h */,
+				6677A433211D2DD6006EEC09 /* SelectorViewController.m */,
+				6677A437211D2DD6006EEC09 /* TiledImageView.h */,
+				6677A43C211D2DD6006EEC09 /* TiledImageView.m */,
+				6677A439211D2DD6006EEC09 /* XZView.h */,
+				6677A436211D2DD6006EEC09 /* XZView.m */,
 				66C60BAD211AF56200B63F8F /* Main.storyboard */,
 				66C60BB0211AF56300B63F8F /* Assets.xcassets */,
 				66C60BB2211AF56300B63F8F /* LaunchScreen.storyboard */,
 				66C60BB5211AF56300B63F8F /* Info.plist */,
 				66C60BB6211AF56300B63F8F /* main.m */,
+				6677A444211D2E07006EEC09 /* LayerKit-Bridging-Header.h */,
 			);
 			path = LayerKit;
 			sourceTree = "<group>";
@@ -204,6 +244,7 @@
 				TargetAttributes = {
 					66C60BA3211AF56200B63F8F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					66C60BBB211AF56300B63F8F = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -269,8 +310,16 @@
 			files = (
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
+				6677A441211D2DD6006EEC09 /* XZView.m in Sources */,
+				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
+				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
+				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
 				66C60BB7211AF56300B63F8F /* main.m in Sources */,
 				66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */,
+				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
+				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
+				6677A43E211D2DD6006EEC09 /* DrawImage.m in Sources */,
+				6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,6 +497,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoolink.LayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LayerKit/LayerKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoolink.LayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LayerKit/LayerKit-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -470,6 +526,7 @@
 		66C60BD4211AF56300B63F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKitTests/Info.plist;
@@ -488,6 +545,7 @@
 		66C60BD5211AF56300B63F8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKitTests/Info.plist;
@@ -506,6 +564,7 @@
 		66C60BD7211AF56300B63F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +582,7 @@
 		66C60BD8211AF56300B63F8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LayerKitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

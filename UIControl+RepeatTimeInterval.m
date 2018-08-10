@@ -8,41 +8,35 @@ static const char *UIControl_acceptEventInterval = "UIControl_acceptEventInterva
 
 static const char *UIControl_ingoreEvent = "UIControl_ingoreEvent";
 
-- (NSTimeInterval)repeatTimeInterval
-{
+- (NSTimeInterval)repeatTimeInterval {
     return [objc_getAssociatedObject(self, UIControl_acceptEventInterval)doubleValue];
 }
 
-- (void)setRepeatTimeInterval:(NSTimeInterval)repeatTimeInterval
-{
+- (void)setRepeatTimeInterval:(NSTimeInterval)repeatTimeInterval {
     objc_setAssociatedObject(self, UIControl_acceptEventInterval,@(repeatTimeInterval),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (BOOL)JQ_ignoreEvent
-{
-    return [objc_getAssociatedObject(self, UIControl_ingoreEvent)boolValue];
+- (BOOL)isRespond {
+    return [objc_getAssociatedObject(self, UIControl_ingoreEvent) boolValue];
 }
 
-- (void)setJQ_ignoreEvent:(BOOL)JQ_ignoreEvent
-{
-    objc_setAssociatedObject(self, UIControl_ingoreEvent, @(JQ_ignoreEvent), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setIsRespond:(BOOL)isRespond {
+    objc_setAssociatedObject(self, UIControl_ingoreEvent, @(isRespond), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-+ (void)load
-{
-    Method a = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
-    Method b = class_getInstanceMethod(self, @selector(__JQ_sendAction:to:forEvent:));
-    method_exchangeImplementations(a, b);
++ (void)load {
+    Method appleMethod = class_getInstanceMethod(self,  @selector(sendAction:to:forEvent:));
+    Method customMethod = class_getInstanceMethod(self, @selector(hook_sendAction:to:forEvent:));
+    method_exchangeImplementations(appleMethod, customMethod);
 }
 
-- (void)__JQ_sendAction:(SEL)action to:(id)target forEvent:(UIEvent*)event
-{
-    if (self.JQ_ignoreEvent)return;
-    if (self.JQ_acceptEventInterval > 0) {
-        self.JQ_ignoreEvent = YES;
-        [self performSelector:@selector(setJQ_ignoreEvent:) withObject:@(NO) afterDelay:self.JQ_acceptEventInterval];
+- (void)hook_sendAction:(SEL)action to:(id)target forEvent:(UIEvent*)event {
+    if (self.isRespond)return;
+    if (self.repeatTimeInterval > 0) {
+        self.isRespond = YES;
+        [self performSelector:@selector(setIsRespond:) withObject:@(NO) afterDelay:self.repeatTimeInterval];
     }
-    [self __JQ_sendAction:action to:target forEvent:event];
+    [self hook_sendAction:action to:target forEvent:event];
 }
 
 @end
