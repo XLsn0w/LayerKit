@@ -16,6 +16,7 @@
 		6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A445211D2E08006EEC09 /* LayerViewController.swift */; };
 		667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */; };
 		667D6CD52121506C00E99C0F /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 667D6CD42121506C00E99C0F /* download.jpg */; };
+		667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D6CD8212185AE00E99C0F /* CGPathViewController.swift */; };
 		66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BA8211AF56200B63F8F /* AppDelegate.m */; };
 		66C60BAC211AF56200B63F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BAB211AF56200B63F8F /* ViewController.m */; };
 		66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C60BAD211AF56200B63F8F /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+RoundCorner.h"; sourceTree = "<group>"; };
 		667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+RoundCorner.m"; sourceTree = "<group>"; };
 		667D6CD42121506C00E99C0F /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		667D6CD8212185AE00E99C0F /* CGPathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPathViewController.swift; sourceTree = "<group>"; };
 		66C60BA4211AF56200B63F8F /* LayerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C60BA7211AF56200B63F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66C60BA8211AF56200B63F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
+				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
 				66C60BA7211AF56200B63F8F /* AppDelegate.h */,
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
@@ -316,6 +319,7 @@
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
 				6677A441211D2DD6006EEC09 /* SubView.m in Sources */,
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
+				667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
