@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         view.addSubview(label);
         label.layer.addSublayer(shape);
         
+
+        
+        
 //      let v:DrawView = DrawView.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100))
 //      view.addSubview(v)
         

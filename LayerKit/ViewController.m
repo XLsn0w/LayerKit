@@ -46,7 +46,7 @@
     CAShapeLayer* mask = [CAShapeLayer drawRoundCornerWithRect:_img.bounds];
     _img.layer.mask = mask;
     
-    UIBezierPath *path = [[UIBezierPath alloc] init];
+    UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(175, 100)];
     
     [path addArcWithCenter:CGPointMake(150, 100) radius:25 startAngle:0 endAngle:2*M_PI clockwise:YES];
