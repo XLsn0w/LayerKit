@@ -130,9 +130,9 @@
 		66C60BA6211AF56200B63F8F /* LayerKit */ = {
 			isa = PBXGroup;
 			children = (
+				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				66C60BA7211AF56200B63F8F /* AppDelegate.h */,
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
-				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
 				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
