@@ -10,6 +10,6 @@
 
 @interface CAShapeLayer (RoundCorner)
 
-+ (CAShapeLayer *)drawRoundCornerWithCAShapeLayerRect:(CGRect)shapeLayerRect;
++ (CAShapeLayer *)drawRoundCornerWithRect:(CGRect)shapeLayerRect;
 
 @end

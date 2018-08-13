@@ -13,14 +13,38 @@
 
 @property (weak, nonatomic) IBOutlet UIView *rectView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *img;
+
 @end
 
 @implementation ViewController
 
+
+//避免图层混合
+//
+//确保控件的opaque属性设置为true，确保backgroundColor和父视图颜色一致且不透明。
+//如无特殊需要，不要设置低于1的alpha值。
+//确保UIImage没有alpha通道。
+
+
+//避免临时转换
+//
+//确保图片大小和frame一致，不要在滑动时缩放图片。
+//确保图片颜色格式被GPU支持，避免劳烦CPU转换。
+//慎用离屏渲染
+
+
+//绝大多数时候离屏渲染会影响性能。
+
+//重写drawRect方法，设置圆角、阴影、模糊效果，光栅化都会导致离屏渲染。
+//设置阴影效果是加上阴影路径。
+//滑动时若需要圆角效果，开启光栅化。
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _rectView.layer.mask = [CAShapeLayer drawRoundCornerWithCAShapeLayerRect:_rectView.bounds];
+    CAShapeLayer* mask = [CAShapeLayer drawRoundCornerWithRect:_img.bounds];
+    _img.layer.mask = mask;
     
     UIBezierPath *path = [[UIBezierPath alloc] init];
     [path moveToPoint:CGPointMake(175, 100)];
@@ -44,6 +68,9 @@
     shapeLayer.path = path.CGPath;
     //add it to our view
     [self.view.layer addSublayer:shapeLayer];
+    
+    
+    self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;///这行代码指定了阴影路径，如果没有手动指定，Core Animation会去自动计算，这就会触发离屏渲染。如果人为指定了阴影路径，就可以免去计算，从而避免产生离屏渲染。
     
 }
 

@@ -1,7 +1,7 @@
 
-#import "XZView.h"
+#import "SubView.h"
 
-@implementation XZView
+@implementation SubView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

@@ -10,11 +10,12 @@
 		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
 		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
 		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
-		6677A441211D2DD6006EEC09 /* XZView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A436211D2DD6006EEC09 /* XZView.m */; };
+		6677A441211D2DD6006EEC09 /* SubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A436211D2DD6006EEC09 /* SubView.m */; };
 		6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43A211D2DD6006EEC09 /* ImageScrollView.m */; };
 		6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43C211D2DD6006EEC09 /* TiledImageView.m */; };
 		6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A445211D2E08006EEC09 /* LayerViewController.swift */; };
 		667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */; };
+		667D6CD52121506C00E99C0F /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 667D6CD42121506C00E99C0F /* download.jpg */; };
 		66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BA8211AF56200B63F8F /* AppDelegate.m */; };
 		66C60BAC211AF56200B63F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BAB211AF56200B63F8F /* ViewController.m */; };
 		66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C60BAD211AF56200B63F8F /* Main.storyboard */; };
@@ -49,10 +50,10 @@
 		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		6677A433211D2DD6006EEC09 /* SelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
 		6677A434211D2DD6006EEC09 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
-		6677A436211D2DD6006EEC09 /* XZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZView.m; sourceTree = "<group>"; };
+		6677A436211D2DD6006EEC09 /* SubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubView.m; sourceTree = "<group>"; };
 		6677A437211D2DD6006EEC09 /* TiledImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledImageView.h; sourceTree = "<group>"; };
 		6677A438211D2DD6006EEC09 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
-		6677A439211D2DD6006EEC09 /* XZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZView.h; sourceTree = "<group>"; };
+		6677A439211D2DD6006EEC09 /* SubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubView.h; sourceTree = "<group>"; };
 		6677A43A211D2DD6006EEC09 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		6677A43B211D2DD6006EEC09 /* SelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
 		6677A43C211D2DD6006EEC09 /* TiledImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledImageView.m; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		6677A445211D2E08006EEC09 /* LayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
 		667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+RoundCorner.h"; sourceTree = "<group>"; };
 		667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+RoundCorner.m"; sourceTree = "<group>"; };
+		667D6CD42121506C00E99C0F /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
 		66C60BA4211AF56200B63F8F /* LayerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C60BA7211AF56200B63F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66C60BA8211AF56200B63F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,8 +149,9 @@
 				6677A433211D2DD6006EEC09 /* SelectorViewController.m */,
 				6677A437211D2DD6006EEC09 /* TiledImageView.h */,
 				6677A43C211D2DD6006EEC09 /* TiledImageView.m */,
-				6677A439211D2DD6006EEC09 /* XZView.h */,
-				6677A436211D2DD6006EEC09 /* XZView.m */,
+				6677A439211D2DD6006EEC09 /* SubView.h */,
+				6677A436211D2DD6006EEC09 /* SubView.m */,
+				667D6CD42121506C00E99C0F /* download.jpg */,
 				66C60BAD211AF56200B63F8F /* Main.storyboard */,
 				66C60BB0211AF56300B63F8F /* Assets.xcassets */,
 				66C60BB2211AF56300B63F8F /* LaunchScreen.storyboard */,
@@ -284,6 +287,7 @@
 				66C60BB4211AF56300B63F8F /* LaunchScreen.storyboard in Resources */,
 				66C60BB1211AF56300B63F8F /* Assets.xcassets in Resources */,
 				66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */,
+				667D6CD52121506C00E99C0F /* download.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +314,7 @@
 			files = (
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
-				6677A441211D2DD6006EEC09 /* XZView.m in Sources */,
+				6677A441211D2DD6006EEC09 /* SubView.m in Sources */,
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,

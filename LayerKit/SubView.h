@@ -1,6 +1,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZView : UIView
+@interface SubView : UIView
 
 @end

@@ -18,14 +18,15 @@
 /**
  绘制圆角
 
- @param shapeLayerRect frame
+ @param rect frame
  @return CAShapeLayer
  */
-+ (CAShapeLayer *)drawRoundCornerWithCAShapeLayerRect:(CGRect)shapeLayerRect {
++ (CAShapeLayer *)drawRoundCornerWithRect:(CGRect)rect {
     CAShapeLayer *mask = [CAShapeLayer layer];
-    mask.frame = shapeLayerRect;
+    mask.frame = rect;
 //  mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect cornerRadius:shapeLayerRect.size.width/2].CGPath;//设置圆角
-    mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect byRoundingCorners:UIRectCornerAllCorners cornerRadii:shapeLayerRect.size].CGPath;///cornerRadii 圆角半径
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerAllCorners) cornerRadii:rect.size];///cornerRadii 圆角半径
+    mask.path = bezierPath.CGPath;/// CGPathRef
     return mask;
 }
 
