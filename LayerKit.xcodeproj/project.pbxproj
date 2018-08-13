@@ -14,6 +14,7 @@
 		6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43A211D2DD6006EEC09 /* ImageScrollView.m */; };
 		6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A43C211D2DD6006EEC09 /* TiledImageView.m */; };
 		6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A445211D2E08006EEC09 /* LayerViewController.swift */; };
+		667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */; };
 		66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BA8211AF56200B63F8F /* AppDelegate.m */; };
 		66C60BAC211AF56200B63F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BAB211AF56200B63F8F /* ViewController.m */; };
 		66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C60BAD211AF56200B63F8F /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		6677A43C211D2DD6006EEC09 /* TiledImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledImageView.m; sourceTree = "<group>"; };
 		6677A444211D2E07006EEC09 /* LayerKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayerKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		6677A445211D2E08006EEC09 /* LayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
+		667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+RoundCorner.h"; sourceTree = "<group>"; };
+		667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+RoundCorner.m"; sourceTree = "<group>"; };
 		66C60BA4211AF56200B63F8F /* LayerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C60BA7211AF56200B63F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66C60BA8211AF56200B63F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
+				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
+				667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */,
 				6677A434211D2DD6006EEC09 /* DrawView.h */,
 				6677A42F211D2DD6006EEC09 /* DrawView.m */,
 				6677A438211D2DD6006EEC09 /* DrawViewController.h */,
@@ -306,6 +311,7 @@
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
 				6677A441211D2DD6006EEC09 /* XZView.m in Sources */,
+				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
