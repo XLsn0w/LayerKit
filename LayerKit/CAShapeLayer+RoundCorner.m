@@ -11,21 +11,18 @@
 
 @implementation CAShapeLayer (RoundCorner)
 
-+ (CAShapeLayer *)drawRoundCornerWithCAShapeLayerRect:(CGRect)shapeLayerRect
-                                         cornerRadius:(CGFloat)cornerRadius {
++ (CAShapeLayer *)drawRoundCornerWithCAShapeLayerRect:(CGRect)shapeLayerRect {
     CAShapeLayer *mask = [CAShapeLayer layer];
     mask.frame = shapeLayerRect;
-    mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect cornerRadius:cornerRadius].CGPath;
-    
-    //    shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerFrame byRoundingCorners:UIRectCornerAllCorners cornerRadii:shapeLayerFrame.size].CGPath;
+    mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect cornerRadius:shapeLayerRect.size.width/2].CGPath;
+//  mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerFrame byRoundingCorners:UIRectCornerAllCorners cornerRadii:shapeLayerFrame.size].CGPath;
     return mask;
     
-    //    不需要获取上下文
-    //    //设置圆角
-    //    UIBezierPath *path;
-    //    path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+
     //    CAShapeLayer *maskLayer = [CAShapeLayer layer];
     //    maskLayer.frame = self.bounds;
+    //    //设置圆角
+    //    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(self.frame.size.width, self.frame.size.height)];
     //    maskLayer.path = path.CGPath;
     //    self.layer.mask = maskLayer;
     //

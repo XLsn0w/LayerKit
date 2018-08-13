@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    _rectView.layer.mask = [CAShapeLayer drawRoundCornerWithCAShapeLayerRect:_rectView.bounds cornerRadius:_rectView.bounds.size.width/2];
+    _rectView.layer.mask = [CAShapeLayer drawRoundCornerWithCAShapeLayerRect:_rectView.bounds];
     
     UIBezierPath *path = [[UIBezierPath alloc] init];
     [path moveToPoint:CGPointMake(175, 100)];
