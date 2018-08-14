@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CAShapeLayer+RoundCorner.h"
+#import "UIControl+RepeatTimeInterval.h"
+#import "UIView+RoundCorner.h"
 
 @interface ViewController ()
 
@@ -15,10 +17,15 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *img;
 
+@property (weak, nonatomic) IBOutlet UIButton *btn;
+
 @end
 
 @implementation ViewController
 
+- (IBAction)btnSEL:(id)sender {
+    NSLog(@"---");
+}
 
 //避免图层混合
 //
@@ -43,8 +50,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CAShapeLayer* mask = [CAShapeLayer drawRoundCornerWithRect:_img.bounds];
-    _img.layer.mask = mask;
+//    [CAShapeLayer drawRoundCornerWithView:_img strokeColor:(UIColor.greenColor) lineWidth:3];
+    
+    [_img drawRoundCornerWithStrokeColor:UIColor.blueColor lineWidth:5];
+
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(175, 100)];
@@ -71,6 +80,25 @@
     
     
     self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;///这行代码指定了阴影路径，如果没有手动指定，Core Animation会去自动计算，这就会触发离屏渲染。如果人为指定了阴影路径，就可以免去计算，从而避免产生离屏渲染。
+    
+    
+    _btn.repeatTimeInterval = 3;
+    
+    
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    imageView.image = [UIImage imageNamed:@"1"];
+    
+    //开始对imageView进行画图
+    UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, NO, 1.0);
+    //使用贝塞尔曲线画出一个圆形图
+    [[UIBezierPath bezierPathWithRoundedRect:imageView.bounds cornerRadius:imageView.frame.size.width] addClip];
+    [imageView drawRect:imageView.bounds];
+    
+    imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+    //结束画图
+    UIGraphicsEndImageContext();
+    [self.view addSubview:imageView];
     
 }
 

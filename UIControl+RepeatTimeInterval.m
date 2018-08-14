@@ -33,8 +33,8 @@ static const char *UIControl_ingoreEvent = "UIControl_ingoreEvent";
 - (void)hook_sendAction:(SEL)action to:(id)target forEvent:(UIEvent*)event {
     if (self.isRespond) return;
     if (self.repeatTimeInterval > 0) {
-        self.isRespond = YES;
-        [self performSelector:@selector(setIsRespond:) withObject:@(NO) afterDelay:self.repeatTimeInterval];
+        self.isRespond = true;
+        [self performSelector:@selector(setIsRespond:) withObject:@(false) afterDelay:self.repeatTimeInterval];
     }
     [self hook_sendAction:action to:target forEvent:event];
 }

@@ -7,7 +7,6 @@
 //
 
 #import "CAShapeLayer+RoundCorner.h"
-#import <UIKit/UIKit.h>
 
 @implementation CAShapeLayer (RoundCorner)
 
@@ -27,7 +26,29 @@
 //  mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect cornerRadius:shapeLayerRect.size.width/2].CGPath;//设置圆角
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerAllCorners) cornerRadii:rect.size];///cornerRadii 圆角半径
     mask.path = bezierPath.CGPath;/// CGPathRef
+
     return mask;
 }
 
+
++ (void)drawRoundCornerWithView:(UIView *)view strokeColor:(UIColor *)strokeColor lineWidth:(CGFloat)lineWidth {
+    CAShapeLayer *mask = [CAShapeLayer layer];
+    mask.frame = view.bounds;
+    //  mask.path = [UIBezierPath bezierPathWithRoundedRect:shapeLayerRect cornerRadius:shapeLayerRect.size.width/2].CGPath;//设置圆角
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:(UIRectCornerAllCorners) cornerRadii:view.bounds.size];///cornerRadii 圆角半径
+    mask.path = bezierPath.CGPath;/// CGPathRef
+    view.layer.mask = mask;
+    
+    CAShapeLayer *stroke = [CAShapeLayer layer];
+    stroke.frame = view.bounds;
+    stroke.lineWidth = lineWidth;
+    stroke.strokeColor = strokeColor.CGColor;
+    stroke.fillColor = [UIColor clearColor].CGColor;
+    stroke.path = bezierPath.CGPath;
+    [view.layer addSublayer:stroke];
+}
+
 @end
+
+
+///x x x  xx         x      n

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660B186E212264BF00FC880F /* RoundedCornerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B186D212264BF00FC880F /* RoundedCornerViewController.swift */; };
+		660B18712122719700FC880F /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18702122719700FC880F /* UIImage+Add.m */; };
+		660B18732122720F00FC880F /* UIImageAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B18722122720F00FC880F /* UIImageAdd.swift */; };
+		660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18752122801D00FC880F /* UIView+RoundCorner.m */; };
 		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
 		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
 		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
@@ -46,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660B186D212264BF00FC880F /* RoundedCornerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerViewController.swift; sourceTree = "<group>"; };
+		660B186F2122719700FC880F /* UIImage+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Add.h"; sourceTree = "<group>"; };
+		660B18702122719700FC880F /* UIImage+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Add.m"; sourceTree = "<group>"; };
+		660B18722122720F00FC880F /* UIImageAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageAdd.swift; sourceTree = "<group>"; };
+		660B18742122801D00FC880F /* UIView+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorner.h"; sourceTree = "<group>"; };
+		660B18752122801D00FC880F /* UIView+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundCorner.m"; sourceTree = "<group>"; };
 		6677A42F211D2DD6006EEC09 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		6677A430211D2DD6006EEC09 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
@@ -136,12 +146,18 @@
 			children = (
 				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
+				660B186D212264BF00FC880F /* RoundedCornerViewController.swift */,
+				660B18722122720F00FC880F /* UIImageAdd.swift */,
+				660B186F2122719700FC880F /* UIImage+Add.h */,
+				660B18702122719700FC880F /* UIImage+Add.m */,
 				66C60BA7211AF56200B63F8F /* AppDelegate.h */,
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
 				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
 				667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */,
+				660B18742122801D00FC880F /* UIView+RoundCorner.h */,
+				660B18752122801D00FC880F /* UIView+RoundCorner.m */,
 				6677A434211D2DD6006EEC09 /* DrawView.h */,
 				6677A42F211D2DD6006EEC09 /* DrawView.m */,
 				6677A438211D2DD6006EEC09 /* DrawViewController.h */,
@@ -318,7 +334,10 @@
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
 				6677A441211D2DD6006EEC09 /* SubView.m in Sources */,
+				660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */,
+				660B18712122719700FC880F /* UIImage+Add.m in Sources */,
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
+				660B18732122720F00FC880F /* UIImageAdd.swift in Sources */,
 				667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
@@ -328,6 +347,7 @@
 				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
 				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
 				6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */,
+				660B186E212264BF00FC880F /* RoundedCornerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
