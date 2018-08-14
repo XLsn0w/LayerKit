@@ -10,8 +10,50 @@
 
 @implementation DrawView
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGPoint startP = [[touches anyObject] locationInView:self];
+    
+//    if ([event allTouches].count == 1) {
+//
+//        UIBezierPath *path = [UIBezierPath paintPathWithLineWidth:_width startPoint:startP];
+//        _path = path;
+//
+//        CAShapeLayer * slayer = [CAShapeLayer layer];
+//        slayer.path = path.CGPath;
+//        slayer.backgroundColor = [UIColor clearColor].CGColor;
+//        slayer.fillColor = [UIColor clearColor].CGColor;
+//        slayer.lineCap = kCALineCapRound;
+//        slayer.lineJoin = kCALineJoinRound;
+//        slayer.strokeColor = [UIColor blackColor].CGColor;
+//        slayer.lineWidth = path.lineWidth;
+//        [self.layer addSublayer:slayer];
+//        _slayer = slayer;
+//        [[self mutableArrayValueForKey:@"canceledLines"] removeAllObjects];
+//        [[self mutableArrayValueForKey:@"lines"] addObject:_slayer];
+//
+//    }
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // 获取移动点
+    CGPoint moveP = [[touches anyObject] locationInView:self];
+    
+    if ([event allTouches].count > 1){
+        
+        [self.superview touchesMoved:touches withEvent:event];
+        
+    }else if ([event allTouches].count == 1) {
+        
+//        [_path addLineToPoint:moveP];
+//        
+//        _slayer.path = _path.CGPath;
+        
+    }
+}
+
+
 //- (void)drawRect:(CGRect)rect {
-//    NSString *text = @"devZhang is an iOS developer.iOS开发者 iOS开发者 iOS开发者 iOS开发者 iOS开发者";
+//    NSString *text = @" is an iOS developer.iOS开发者 iOS开发者 iOS开发者 iOS开发者 iOS开发者";
 //    // 文本段落样式
 //    NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle alloc] init];
 //    textStyle.lineBreakMode = NSLineBreakByWordWrapping; // 结尾部分的内容以……方式省略 ( "...wxyz" ,"abcd..." ,"ab...yz")

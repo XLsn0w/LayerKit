@@ -51,21 +51,23 @@
     [super viewDidLoad];
 
 //    [CAShapeLayer drawRoundCornerWithView:_img strokeColor:(UIColor.greenColor) lineWidth:3];
-    
     [_img drawRoundCornerWithStrokeColor:UIColor.blueColor lineWidth:5];
+    
+    
+//    centerX _rectView.center.x;
 
     
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(175, 100)];
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint:CGPointMake(175, 100)];
     
-    [path addArcWithCenter:CGPointMake(150, 100) radius:25 startAngle:0 endAngle:2*M_PI clockwise:YES];
-    [path moveToPoint:CGPointMake(150, 125)];
-    [path addLineToPoint:CGPointMake(150, 175)];
-    [path addLineToPoint:CGPointMake(125, 225)];
-    [path moveToPoint:CGPointMake(150, 175)];
-    [path addLineToPoint:CGPointMake(175, 225)];
-    [path moveToPoint:CGPointMake(100, 150)];
-    [path addLineToPoint:CGPointMake(200, 150)];
+    [bezierPath addArcWithCenter:CGPointMake(150, 100) radius:25 startAngle:0 endAngle:2*M_PI clockwise:YES];
+    [bezierPath moveToPoint:CGPointMake(150, 125)];
+    [bezierPath addLineToPoint:CGPointMake(150, 175)];
+    [bezierPath addLineToPoint:CGPointMake(125, 225)];
+    [bezierPath moveToPoint:CGPointMake(150, 175)];
+    [bezierPath addLineToPoint:CGPointMake(175, 225)];
+    [bezierPath moveToPoint:CGPointMake(100, 150)];
+    [bezierPath addLineToPoint:CGPointMake(200, 150)];
     
     //create shape layer
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
@@ -74,7 +76,7 @@
     shapeLayer.lineWidth = 5;
     shapeLayer.lineJoin = kCALineJoinRound;
     shapeLayer.lineCap = kCALineCapRound;
-    shapeLayer.path = path.CGPath;
+    shapeLayer.path = bezierPath.CGPath;
     //add it to our view
     [self.view.layer addSublayer:shapeLayer];
     
@@ -83,6 +85,8 @@
     
     
     _btn.repeatTimeInterval = 3;
+    
+    
     
     
     
@@ -101,6 +105,8 @@
     [self.view addSubview:imageView];
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
