@@ -16,10 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(label);
         label.layer.addSublayer(shape);
-        
 
-        
-        
 //      let v:DrawView = DrawView.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100))
 //      view.addSubview(v)
         
@@ -29,6 +26,13 @@ class ViewController: UIViewController {
 
 //      view.layer.contents = UIImage.init(named: "contents.jpg")?.cgImage
 ///我们利用CALayer在一个普通的UIView中显示了一张图片。这不是一个UIImageView，它不是我们通常用来展示图片的方法。通过直接操作图层，我们使用了一些新的函数，使得UIView更加有趣了。
+        
+        
+        let model = Model();
+        let dic = [String : String]()
+        model.setValuesForKeys(dic)
+//        在swift3中，编译器自动推断@objc，它自动添加@objc
+//        在swift4中，编译器不再自动推断，必须显式添加@objc
     }
 
     private lazy var label:UILabel = {

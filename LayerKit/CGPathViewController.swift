@@ -13,8 +13,6 @@ class CGPathViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //    一、 CGMutablePath 的使用。
-        
         // 设置绘制的路径
         let mutablePath = CGMutablePath.init()
         

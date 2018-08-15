@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		660B18712122719700FC880F /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18702122719700FC880F /* UIImage+Add.m */; };
 		660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18752122801D00FC880F /* UIView+RoundCorner.m */; };
+		660B18792122D31E00FC880F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B18782122D31E00FC880F /* Model.swift */; };
 		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
 		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
 		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
@@ -52,6 +53,7 @@
 		660B18702122719700FC880F /* UIImage+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Add.m"; sourceTree = "<group>"; };
 		660B18742122801D00FC880F /* UIView+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorner.h"; sourceTree = "<group>"; };
 		660B18752122801D00FC880F /* UIView+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundCorner.m"; sourceTree = "<group>"; };
+		660B18782122D31E00FC880F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6677A42F211D2DD6006EEC09 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		6677A430211D2DD6006EEC09 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
@@ -115,6 +117,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660B18772122CD8000FC880F /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
 		66C60B9B211AF56200B63F8F = {
 			isa = PBXGroup;
 			children = (
@@ -140,14 +149,16 @@
 		66C60BA6211AF56200B63F8F /* LayerKit */ = {
 			isa = PBXGroup;
 			children = (
-				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
-				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
-				660B186F2122719700FC880F /* UIImage+Add.h */,
-				660B18702122719700FC880F /* UIImage+Add.m */,
 				66C60BA7211AF56200B63F8F /* AppDelegate.h */,
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
+				660B18772122CD8000FC880F /* Kit */,
+				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
+				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
+				660B18782122D31E00FC880F /* Model.swift */,
+				660B186F2122719700FC880F /* UIImage+Add.h */,
+				660B18702122719700FC880F /* UIImage+Add.m */,
 				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
 				667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */,
 				660B18742122801D00FC880F /* UIView+RoundCorner.h */,
@@ -332,6 +343,7 @@
 				660B18712122719700FC880F /* UIImage+Add.m in Sources */,
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
 				667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */,
+				660B18792122D31E00FC880F /* Model.swift in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,

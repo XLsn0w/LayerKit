@@ -50,8 +50,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [CAShapeLayer drawRoundCornerWithView:_img strokeColor:(UIColor.greenColor) lineWidth:3];
-    [_img drawRoundCornerWithStrokeColor:UIColor.blueColor lineWidth:5];
+    [_img drawRoundCornerWithStrokeColor:UIColor.redColor lineWidth:5];
     
     
 //    centerX _rectView.center.x;

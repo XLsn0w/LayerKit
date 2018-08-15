@@ -13,8 +13,4 @@
 
 + (CAShapeLayer *)drawRoundCornerWithRect:(CGRect)shapeLayerRect;
 
-+ (void)drawRoundCornerWithView:(UIView *)view
-                    strokeColor:(UIColor *)strokeColor
-                      lineWidth:(CGFloat)lineWidth;
-
 @end
