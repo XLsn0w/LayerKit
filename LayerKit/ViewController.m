@@ -85,10 +85,6 @@
     
     _btn.repeatTimeInterval = 3;
     
-    
-    
-    
-    
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     imageView.image = [UIImage imageNamed:@"1"];
     
@@ -102,7 +98,6 @@
     //结束画图
     UIGraphicsEndImageContext();
     [self.view addSubview:imageView];
-    
 }
 
 
