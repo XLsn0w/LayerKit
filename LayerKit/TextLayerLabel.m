@@ -16,21 +16,20 @@
         return [CATextLayer class];
     }
     
-- (CATextLayer *)textLayer
-    {
+- (CATextLayer *)textLayer {
         return (CATextLayer *)self.layer;
-    }
     
-- (void)setUp
-    {
+}
+    
+- (void)setUp {
         //set defaults from UILabel settings
         self.text = self.text;
         self.textColor = self.textColor;
         self.font = self.font;
         
-        
+    _textLayer = (CATextLayer *)self.layer;
         //create a text layer
-        _textLayer = [CATextLayer layer];
+//        _textLayer = [CATextLayer layer];
         _textLayer.frame = self.bounds;
         [self.layer addSublayer:_textLayer];
         
