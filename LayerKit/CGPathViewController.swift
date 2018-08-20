@@ -29,11 +29,11 @@ class CGPathViewController: UIViewController {
     // MARK: 绘制虚线
     func drawDottedLine(rect:CGRect,context:CGContext) -> Void {
         // 设置绘制路径
-        let paths = CGMutablePath.init()
-        paths.move(to: CGPoint.init(x: 120, y: 100))
-        paths.addLine(to: CGPoint.init(x: 320, y: 100))
+        let mPath = CGMutablePath()
+        mPath.move(to: CGPoint.init(x: 120, y: 100))
+        mPath.addLine(to: CGPoint.init(x: 320, y: 100))
         // 添加路径到上下文
-        context.addPath(paths)
+        context.addPath(mPath)
         // 设置颜色
         UIColor.green.set()
         // 设置画笔的宽度
