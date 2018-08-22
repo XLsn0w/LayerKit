@@ -29,11 +29,9 @@
     for (NSDictionary *dic in objectArray) {
         [self performSelector:NSSelectorFromString([dic objectForKey:@"methodName"]) withObject:[dic objectForKey:@"value"]];
     }
-
 }
 
 - (void)DynamicParameterString:(NSString *)string {
-    
     NSLog(@"DynamicParameterString: %@",string);
 }
 

@@ -10,6 +10,8 @@
 		660B18712122719700FC880F /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18702122719700FC880F /* UIImage+Add.m */; };
 		660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18752122801D00FC880F /* UIView+RoundCorner.m */; };
 		660B18792122D31E00FC880F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B18782122D31E00FC880F /* Model.swift */; };
+		66286CC1212D031100F0F0ED /* CAMediaTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */; };
+		66286CC4212D2BFB00F0F0ED /* KitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66286CC3212D2BFB00F0F0ED /* KitViewController.m */; };
 		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
 		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
 		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
@@ -55,6 +57,10 @@
 		660B18742122801D00FC880F /* UIView+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorner.h"; sourceTree = "<group>"; };
 		660B18752122801D00FC880F /* UIView+RoundCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundCorner.m"; sourceTree = "<group>"; };
 		660B18782122D31E00FC880F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		66286CBF212D031100F0F0ED /* CAMediaTimingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingViewController.h; sourceTree = "<group>"; };
+		66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingViewController.m; sourceTree = "<group>"; };
+		66286CC2212D2BFB00F0F0ED /* KitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitViewController.h; sourceTree = "<group>"; };
+		66286CC3212D2BFB00F0F0ED /* KitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitViewController.m; sourceTree = "<group>"; };
 		6677A42F211D2DD6006EEC09 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		6677A430211D2DD6006EEC09 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 		660B18772122CD8000FC880F /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				66286CC2212D2BFB00F0F0ED /* KitViewController.h */,
+				66286CC3212D2BFB00F0F0ED /* KitViewController.m */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -158,6 +166,8 @@
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
 				66E4D9F2212528B800F4A1E5 /* TextLayerLabel.h */,
 				66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */,
+				66286CBF212D031100F0F0ED /* CAMediaTimingViewController.h */,
+				66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */,
 				660B18772122CD8000FC880F /* Kit */,
 				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
 				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
@@ -350,12 +360,14 @@
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
 				667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */,
 				660B18792122D31E00FC880F /* Model.swift in Sources */,
+				66286CC1212D031100F0F0ED /* CAMediaTimingViewController.m in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
 				66C60BB7211AF56300B63F8F /* main.m in Sources */,
 				66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */,
 				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
+				66286CC4212D2BFB00F0F0ED /* KitViewController.m in Sources */,
 				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
 				6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */,
 			);
