@@ -12,13 +12,11 @@
 @implementation TextLayerLabel
 
 + (Class)layerClass {
-        //this makes our label create a CATextLayer //instead of a regular CALayer for its backing layer
-        return [CATextLayer class];
-    }
+    return [CATextLayer class];
+}
     
 - (CATextLayer *)textLayer {
-        return (CATextLayer *)self.layer;
-    
+    return (CATextLayer *)self.layer;
 }
     
 - (void)setUp {

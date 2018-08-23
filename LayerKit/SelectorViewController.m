@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     [self SelectorNoParameter];
     [self performSelector:@selector(xl)];
@@ -36,7 +35,6 @@
 }
 
 - (void)DynamicParameterNumber:(NSNumber *)number{
-    
     NSLog(@"DynamicParameterNumber: %@",number);
 }
 
@@ -44,8 +42,7 @@
 //    
 //}
 
-- (void)SelectorNoParameter{
-
+- (void)SelectorNoParameter {
     NSLog(@"SelectorNoParameter");
 }
 
