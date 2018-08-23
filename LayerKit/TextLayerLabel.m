@@ -14,61 +14,54 @@
 + (Class)layerClass {
     return [CATextLayer class];
 }
-    
+
 - (CATextLayer *)textLayer {
     return (CATextLayer *)self.layer;
 }
-    
+
 - (void)setUp {
-        //set defaults from UILabel settings
-        self.text = self.text;
-        self.textColor = self.textColor;
-        self.font = self.font;
-        
+    //set defaults from UILabel settings
+    self.text = self.text;
+    self.textColor = self.textColor;
+    self.font = self.font;
+    
     _textLayer = (CATextLayer *)self.layer;
-        //create a text layer
-//        _textLayer = [CATextLayer layer];
-        _textLayer.frame = self.bounds;
-        [self.layer addSublayer:_textLayer];
-        
-        //set text attributes
-        _textLayer.foregroundColor = [UIColor blackColor].CGColor;
-        _textLayer.alignmentMode = kCAAlignmentJustified;
-        _textLayer.wrapped = YES;
+    _textLayer.frame = self.bounds;
+    [self.layer addSublayer:_textLayer];
+    
+    //set text attributes
+    _textLayer.foregroundColor = [UIColor blackColor].CGColor;
+    _textLayer.alignmentMode = kCAAlignmentJustified;
+    _textLayer.wrapped = YES;
+    
+    [self.layer display];
+}
 
-        
-        [self.layer display];
+- (instancetype)initWithFrame:(CGRect)frame {
+    //called when creating label programmatically
+    if (self = [super initWithFrame:frame]) {
+        [self setUp];
     }
-    
-- (id)initWithFrame:(CGRect)frame
-    {
-        //called when creating label programmatically
-        if (self = [super initWithFrame:frame]) {
-            [self setUp];
-        }
-        return self;
-    }
-    
+    return self;
+}
 
-    
 - (void)setText:(NSString *)text
-    {
-        super.text = text;
-        //set layer text
-        [self textLayer].string = text;
-    }
-    
-- (void)setTextColor:(UIColor *)textColor
-    {
-        super.textColor = textColor;
-        //set layer text color
-        [self textLayer].foregroundColor = textColor.CGColor;
-    }
-    
-- (void)setFont:(UIFont *)font  {
-        super.font = font;
-    
+{
+    super.text = text;
+    //set layer text
+    [self textLayer].string = text;
+}
 
+- (void)setTextColor:(UIColor *)textColor
+{
+    super.textColor = textColor;
+    //set layer text color
+    [self textLayer].foregroundColor = textColor.CGColor;
+}
+
+- (void)setFont:(UIFont *)font  {
+    super.font = font;
+    
     //set layer font
     CFStringRef fontName = (__bridge CFStringRef)font.fontName;
     CGFontRef fontRef = CGFontCreateWithFontName(fontName);
@@ -76,6 +69,7 @@
     _textLayer.fontSize = font.pointSize;
     CGFontRelease(fontRef);
     
+    
+}
 
-    }
 @end
