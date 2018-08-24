@@ -45,31 +45,25 @@
     return self;
 }
 
-- (void)setText:(NSString *)text
-{
+- (void)setText:(NSString *)text {
     super.text = text;
-    //set layer text
+    /// set layer text
     [self textLayer].string = text;
 }
 
-- (void)setTextColor:(UIColor *)textColor
-{
+- (void)setTextColor:(UIColor *)textColor {
     super.textColor = textColor;
     //set layer text color
     [self textLayer].foregroundColor = textColor.CGColor;
 }
 
-- (void)setFont:(UIFont *)font  {
+- (void)setFont:(UIFont *)font {
     super.font = font;
-    
-    //set layer font
     CFStringRef fontName = (__bridge CFStringRef)font.fontName;
     CGFontRef fontRef = CGFontCreateWithFontName(fontName);
     _textLayer.font = fontRef;
     _textLayer.fontSize = font.pointSize;
     CGFontRelease(fontRef);
-    
-    
 }
 
 @end
