@@ -17,9 +17,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 创建标签的ICON图标。
+    UIApplicationShortcutIcon *icon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
+    // 创建一个标签，并配置相关属性。
+    UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"two" localizedTitle:@"么么哒" localizedSubtitle:@"爱你呦" icon:icon userInfo:nil];
+    // 将标签添加进Application的shortcutItems中。
+    [UIApplication sharedApplication].shortcutItems = @[item];
+
+    
     return YES;
 }
 
+// 程序在后台运行，或者从死亡被激活，从3d进来的页面
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    if ([shortcutItem.localizedTitle isEqualToString:@"点我"]) {
+        self.window.rootViewController.view.backgroundColor = [UIColor yellowColor];
+    } else if ([shortcutItem.localizedTitle isEqualToString:@"么么哒"]) {
+        self.window.rootViewController.view.backgroundColor = [UIColor redColor];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
