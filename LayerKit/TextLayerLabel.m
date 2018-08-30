@@ -38,7 +38,6 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    //called when creating label programmatically
     if (self = [super initWithFrame:frame]) {
         [self setUp];
     }

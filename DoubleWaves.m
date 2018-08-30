@@ -13,11 +13,9 @@
 
 @property (nonatomic, strong) CADisplayLink *firstWaveDisplayLink;
 @property (nonatomic, strong) CAShapeLayer *firstWavesLayer;
-@property (nonatomic, strong) UIColor *firstWavesColor;
 
 @property (nonatomic, strong) CADisplayLink *secondWaveDisplayLink;
 @property (nonatomic, strong) CAShapeLayer *secondWavesLayer;
-@property (nonatomic, strong) UIColor *secondWavesColor;
 
 @property (nonatomic, strong) UIView *sinView;
 @property (nonatomic, strong) UIView *cosView;
@@ -56,7 +54,7 @@
     WavesWidth = self.frame.size.width;
     
     //第二个波浪颜色
-    self.secondWavesColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
+    UIColor* secondWavesColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
     
     //设置波浪的速度
     wavesSpeed = 1/M_PI;
@@ -67,7 +65,7 @@
         //初始化
         self.secondWavesLayer = [CAShapeLayer layer];
         //设置闭环的颜色
-        self.secondWavesLayer.fillColor = self.secondWavesColor.CGColor;
+        self.secondWavesLayer.fillColor = secondWavesColor.CGColor;
         //设置边缘线的颜色
         //_firstWaveLayer.strokeColor = [UIColor blueColor].CGColor;
         //设置边缘线的宽度
@@ -79,22 +77,13 @@
     }
     
     
-    //同正弦函数相同,无交错效果
-    wavesSpeed = 0.02;
+
+    wavesSpeed = 0.04;
     //设置振幅
-    waveA = 12;
+    waveA = 13;
     //设置周期
     waveW = 0.5/30.0;
-    
-    //同正弦函数不同,会有交错效果
-    //设置波浪流动速度
-    //    wavesSpeed = 0.04;
-    //    //设置振幅
-    //    waveA = 13;
-    //    //设置周期
-    //    waveW = 0.5/30.0;
-    
-    
+
     //设置波浪纵向位置
     currentK = self.frame.size.height/2;//屏幕居中
     
@@ -103,6 +92,7 @@
     
     [self.secondWaveDisplayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
+
 -(void)getSecondWave:(CADisplayLink *)displayLink{
     
     //实时的位移
@@ -111,6 +101,7 @@
     
     [self setSecondWaveLayerPath];
 }
+
 -(void)setSecondWaveLayerPath{
     
     //创建一个路径
@@ -152,7 +143,7 @@
     WavesWidth = self.frame.size.width;
     
     //第一个波浪颜色
-    self.firstWavesColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
+    UIColor* firstWavesColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
     
     //设置波浪的速度
     wavesSpeed = 1/M_PI;
@@ -163,7 +154,7 @@
         //初始化
         self.firstWavesLayer = [CAShapeLayer layer];
         //设置闭环的颜色
-        self.firstWavesLayer.fillColor = self.firstWavesColor.CGColor;
+        self.firstWavesLayer.fillColor = firstWavesColor.CGColor;
         //设置边缘线的颜色
         //_firstWaveLayer.strokeColor = [UIColor blueColor].CGColor;
         //设置边缘线的宽度
