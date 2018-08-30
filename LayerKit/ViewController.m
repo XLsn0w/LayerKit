@@ -10,6 +10,7 @@
 #import "CAShapeLayer+RoundCorner.h"
 #import "UIControl+RepeatTimeInterval.h"
 #import "UIView+RoundCorner.h"
+#import "DoubleWaves.h"
 
 @interface ViewController ()
 
@@ -52,6 +53,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    DoubleWaves *doubleWaves = [[DoubleWaves alloc]initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width, 26)];
+    [self.view addSubview:doubleWaves];
 
     [_img drawRoundCornerWithStrokeColor:UIColor.redColor lineWidth:5];
     

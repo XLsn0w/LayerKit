@@ -32,6 +32,7 @@
 		66C60BCC211AF56300B63F8F /* LayerKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BCB211AF56300B63F8F /* LayerKitUITests.m */; };
 		66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */; };
 		66E4D9F4212528B800F4A1E5 /* TextLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */; };
+		66E9C2582137B4AD00C8ED66 /* DoubleWaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RepeatTimeInterval.m"; sourceTree = "<group>"; };
 		66E4D9F2212528B800F4A1E5 /* TextLayerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextLayerLabel.h; sourceTree = "<group>"; };
 		66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextLayerLabel.m; sourceTree = "<group>"; };
+		66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleWaves.h; sourceTree = "<group>"; };
+		66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleWaves.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 			children = (
 				66C60BD9211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.h */,
 				66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */,
+				66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */,
+				66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */,
 				66C60BA6211AF56200B63F8F /* LayerKit */,
 				66C60BBF211AF56300B63F8F /* LayerKitTests */,
 				66C60BCA211AF56300B63F8F /* LayerKitUITests */,
@@ -360,6 +365,7 @@
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
 				667D6CD9212185AE00E99C0F /* CGPathViewController.swift in Sources */,
 				660B18792122D31E00FC880F /* Model.swift in Sources */,
+				66E9C2582137B4AD00C8ED66 /* DoubleWaves.m in Sources */,
 				66286CC1212D031100F0F0ED /* CAMediaTimingViewController.m in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
