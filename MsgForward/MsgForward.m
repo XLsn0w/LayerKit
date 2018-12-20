@@ -48,16 +48,22 @@ Class functionForClassMethod(id self, SEL _cmd) {
 //2、备用接受者
 //动态方法解析无法处理消息，则会走备用接受者。这个备用接受者只能是一个新的对象，不能是self本身，否则就会出现无限循环。如果我们没有指定相应的对象来处理aSelector，则应该调用父类的实现来返回结果。
 
-- (instancetype)forwardingTargetForSelector:(SEL)aSelector {
-    NSString *selectorString = NSStringFromSelector(aSelector);
-    // 将消息交给_helper来处理? ?
-    if ([selectorString isEqualToString:@"hello"]) {
-         return _helper;
-    }
-    return [super forwardingTargetForSelector:aSelector];
-}
-
-
-//3、完整转发
+//- (instancetype)forwardingTargetForSelector:(SEL)aSelector {
+//    NSString *selectorString = NSStringFromSelector(aSelector);
+//    // 将消息交给_helper来处理? ?
+//    if ([selectorString isEqualToString:@"hello"]) {
+//         return _helper;
+//    }
+//    return [super forwardingTargetForSelector:aSelector];
+//}
+//
+//
+////3、完整转发
+//- (void)forwardInvocation:(NSInvocation *)anInvocation
+//{
+//    NSLog(@"forwardInvocation");
+//    if ([RuntimeMethodHelper instancesRespondToSelector:anInvocation.selector]) {
+//        [anInvocation invokeWithTarget:_helper];
+//    }
 
 @end

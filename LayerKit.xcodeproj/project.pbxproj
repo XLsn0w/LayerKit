@@ -36,6 +36,7 @@
 		783158B321CB635D001BD8AC /* NSKVONotifying_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 783158B221CB635D001BD8AC /* NSKVONotifying_Class.m */; };
 		783158B721CB654B001BD8AC /* MsgForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 783158B621CB654B001BD8AC /* MsgForward.m */; };
 		783158B921CB7344001BD8AC /* 消息转发机制.png in Resources */ = {isa = PBXBuildFile; fileRef = 783158B821CB7344001BD8AC /* 消息转发机制.png */; };
+		783158BC21CB813D001BD8AC /* weakProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 783158BB21CB813D001BD8AC /* weakProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		783158B521CB654B001BD8AC /* MsgForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgForward.h; sourceTree = "<group>"; };
 		783158B621CB654B001BD8AC /* MsgForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgForward.m; sourceTree = "<group>"; };
 		783158B821CB7344001BD8AC /* 消息转发机制.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息转发机制.png"; sourceTree = "<group>"; };
+		783158BA21CB813D001BD8AC /* weakProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weakProperty.h; sourceTree = "<group>"; };
+		783158BB21CB813D001BD8AC /* weakProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weakProperty.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 		783158AF21CB6292001BD8AC /* weak */ = {
 			isa = PBXGroup;
 			children = (
+				783158BA21CB813D001BD8AC /* weakProperty.h */,
+				783158BB21CB813D001BD8AC /* weakProperty.m */,
 			);
 			path = weak;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
 				66E4D9F4212528B800F4A1E5 /* TextLayerLabel.m in Sources */,
+				783158BC21CB813D001BD8AC /* weakProperty.m in Sources */,
 				6677A441211D2DD6006EEC09 /* SubView.m in Sources */,
 				660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */,
 				660B18712122719700FC880F /* UIImage+Add.m in Sources */,
