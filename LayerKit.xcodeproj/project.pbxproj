@@ -33,6 +33,9 @@
 		66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */; };
 		66E4D9F4212528B800F4A1E5 /* TextLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */; };
 		66E9C2582137B4AD00C8ED66 /* DoubleWaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */; };
+		783158B321CB635D001BD8AC /* NSKVONotifying_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 783158B221CB635D001BD8AC /* NSKVONotifying_Class.m */; };
+		783158B721CB654B001BD8AC /* MsgForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 783158B621CB654B001BD8AC /* MsgForward.m */; };
+		783158B921CB7344001BD8AC /* 消息转发机制.png in Resources */ = {isa = PBXBuildFile; fileRef = 783158B821CB7344001BD8AC /* 消息转发机制.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,11 @@
 		66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextLayerLabel.m; sourceTree = "<group>"; };
 		66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleWaves.h; sourceTree = "<group>"; };
 		66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleWaves.m; sourceTree = "<group>"; };
+		783158B121CB635D001BD8AC /* NSKVONotifying_Class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_Class.h; sourceTree = "<group>"; };
+		783158B221CB635D001BD8AC /* NSKVONotifying_Class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_Class.m; sourceTree = "<group>"; };
+		783158B521CB654B001BD8AC /* MsgForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgForward.h; sourceTree = "<group>"; };
+		783158B621CB654B001BD8AC /* MsgForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgForward.m; sourceTree = "<group>"; };
+		783158B821CB7344001BD8AC /* 消息转发机制.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息转发机制.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,9 @@
 				66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */,
 				66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */,
 				66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */,
+				783158B421CB6536001BD8AC /* MsgForward */,
+				783158B021CB6310001BD8AC /* NSKVONotifying_Class */,
+				783158AF21CB6292001BD8AC /* weak */,
 				66C60BA6211AF56200B63F8F /* LayerKit */,
 				66C60BBF211AF56300B63F8F /* LayerKitTests */,
 				66C60BCA211AF56300B63F8F /* LayerKitUITests */,
@@ -222,6 +233,32 @@
 				66C60BCD211AF56300B63F8F /* Info.plist */,
 			);
 			path = LayerKitUITests;
+			sourceTree = "<group>";
+		};
+		783158AF21CB6292001BD8AC /* weak */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = weak;
+			sourceTree = "<group>";
+		};
+		783158B021CB6310001BD8AC /* NSKVONotifying_Class */ = {
+			isa = PBXGroup;
+			children = (
+				783158B121CB635D001BD8AC /* NSKVONotifying_Class.h */,
+				783158B221CB635D001BD8AC /* NSKVONotifying_Class.m */,
+			);
+			path = NSKVONotifying_Class;
+			sourceTree = "<group>";
+		};
+		783158B421CB6536001BD8AC /* MsgForward */ = {
+			isa = PBXGroup;
+			children = (
+				783158B821CB7344001BD8AC /* 消息转发机制.png */,
+				783158B521CB654B001BD8AC /* MsgForward.h */,
+				783158B621CB654B001BD8AC /* MsgForward.m */,
+			);
+			path = MsgForward;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C60BB4211AF56300B63F8F /* LaunchScreen.storyboard in Resources */,
+				783158B921CB7344001BD8AC /* 消息转发机制.png in Resources */,
 				66C60BB1211AF56300B63F8F /* Assets.xcassets in Resources */,
 				66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */,
 				667D6CD52121506C00E99C0F /* download.jpg in Resources */,
@@ -372,6 +410,8 @@
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
 				66C60BB7211AF56300B63F8F /* main.m in Sources */,
 				66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */,
+				783158B321CB635D001BD8AC /* NSKVONotifying_Class.m in Sources */,
+				783158B721CB654B001BD8AC /* MsgForward.m in Sources */,
 				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
 				66286CC4212D2BFB00F0F0ED /* KitViewController.m in Sources */,
 				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
