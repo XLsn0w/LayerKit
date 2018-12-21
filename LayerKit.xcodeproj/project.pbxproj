@@ -11,7 +11,6 @@
 		660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18752122801D00FC880F /* UIView+RoundCorner.m */; };
 		660B18792122D31E00FC880F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B18782122D31E00FC880F /* Model.swift */; };
 		66286CC1212D031100F0F0ED /* CAMediaTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */; };
-		66286CC4212D2BFB00F0F0ED /* KitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66286CC3212D2BFB00F0F0ED /* KitViewController.m */; };
 		6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A42F211D2DD6006EEC09 /* DrawView.m */; };
 		6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A432211D2DD6006EEC09 /* DrawViewController.m */; };
 		6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677A433211D2DD6006EEC09 /* SelectorViewController.m */; };
@@ -64,8 +63,6 @@
 		660B18782122D31E00FC880F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		66286CBF212D031100F0F0ED /* CAMediaTimingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingViewController.h; sourceTree = "<group>"; };
 		66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingViewController.m; sourceTree = "<group>"; };
-		66286CC2212D2BFB00F0F0ED /* KitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitViewController.h; sourceTree = "<group>"; };
-		66286CC3212D2BFB00F0F0ED /* KitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitViewController.m; sourceTree = "<group>"; };
 		6677A42F211D2DD6006EEC09 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		6677A430211D2DD6006EEC09 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		6677A432211D2DD6006EEC09 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
@@ -140,15 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		660B18772122CD8000FC880F /* Kit */ = {
-			isa = PBXGroup;
-			children = (
-				66286CC2212D2BFB00F0F0ED /* KitViewController.h */,
-				66286CC3212D2BFB00F0F0ED /* KitViewController.m */,
-			);
-			path = Kit;
-			sourceTree = "<group>";
-		};
 		66C60B9B211AF56200B63F8F = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +144,8 @@
 				66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */,
 				66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */,
 				66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */,
-				783158B421CB6536001BD8AC /* MsgForward */,
-				783158B021CB6310001BD8AC /* NSKVONotifying_Class */,
-				783158AF21CB6292001BD8AC /* weak */,
+				78A5B85621CCE08800378563 /* objc */,
+				78A5B85521CCE07900378563 /* swift */,
 				66C60BA6211AF56200B63F8F /* LayerKit */,
 				66C60BBF211AF56300B63F8F /* LayerKitTests */,
 				66C60BCA211AF56300B63F8F /* LayerKitUITests */,
@@ -183,38 +170,12 @@
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
-				66E4D9F2212528B800F4A1E5 /* TextLayerLabel.h */,
-				66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */,
-				66286CBF212D031100F0F0ED /* CAMediaTimingViewController.h */,
-				66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */,
-				660B18772122CD8000FC880F /* Kit */,
-				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
-				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
-				660B18782122D31E00FC880F /* Model.swift */,
-				660B186F2122719700FC880F /* UIImage+Add.h */,
-				660B18702122719700FC880F /* UIImage+Add.m */,
-				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
-				667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */,
-				660B18742122801D00FC880F /* UIView+RoundCorner.h */,
-				660B18752122801D00FC880F /* UIView+RoundCorner.m */,
-				6677A434211D2DD6006EEC09 /* DrawView.h */,
-				6677A42F211D2DD6006EEC09 /* DrawView.m */,
-				6677A438211D2DD6006EEC09 /* DrawViewController.h */,
-				6677A432211D2DD6006EEC09 /* DrawViewController.m */,
-				6677A430211D2DD6006EEC09 /* ImageScrollView.h */,
-				6677A43A211D2DD6006EEC09 /* ImageScrollView.m */,
-				6677A43B211D2DD6006EEC09 /* SelectorViewController.h */,
-				6677A433211D2DD6006EEC09 /* SelectorViewController.m */,
-				6677A437211D2DD6006EEC09 /* TiledImageView.h */,
-				6677A43C211D2DD6006EEC09 /* TiledImageView.m */,
-				6677A439211D2DD6006EEC09 /* SubView.h */,
-				6677A436211D2DD6006EEC09 /* SubView.m */,
-				667D6CD42121506C00E99C0F /* download.jpg */,
 				66C60BAD211AF56200B63F8F /* Main.storyboard */,
 				66C60BB0211AF56300B63F8F /* Assets.xcassets */,
 				66C60BB2211AF56300B63F8F /* LaunchScreen.storyboard */,
 				66C60BB5211AF56300B63F8F /* Info.plist */,
 				66C60BB6211AF56300B63F8F /* main.m */,
+				667D6CD42121506C00E99C0F /* download.jpg */,
 				6677A444211D2E07006EEC09 /* LayerKit-Bridging-Header.h */,
 			);
 			path = LayerKit;
@@ -264,6 +225,48 @@
 				783158B621CB654B001BD8AC /* MsgForward.m */,
 			);
 			path = MsgForward;
+			sourceTree = "<group>";
+		};
+		78A5B85521CCE07900378563 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				6677A445211D2E08006EEC09 /* LayerViewController.swift */,
+				667D6CD8212185AE00E99C0F /* CGPathViewController.swift */,
+				660B18782122D31E00FC880F /* Model.swift */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		78A5B85621CCE08800378563 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				660B186F2122719700FC880F /* UIImage+Add.h */,
+				660B18702122719700FC880F /* UIImage+Add.m */,
+				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
+				667D6CD221212C5B00E99C0F /* CAShapeLayer+RoundCorner.m */,
+				660B18742122801D00FC880F /* UIView+RoundCorner.h */,
+				660B18752122801D00FC880F /* UIView+RoundCorner.m */,
+				6677A434211D2DD6006EEC09 /* DrawView.h */,
+				6677A42F211D2DD6006EEC09 /* DrawView.m */,
+				6677A438211D2DD6006EEC09 /* DrawViewController.h */,
+				6677A432211D2DD6006EEC09 /* DrawViewController.m */,
+				6677A430211D2DD6006EEC09 /* ImageScrollView.h */,
+				6677A43A211D2DD6006EEC09 /* ImageScrollView.m */,
+				6677A43B211D2DD6006EEC09 /* SelectorViewController.h */,
+				6677A433211D2DD6006EEC09 /* SelectorViewController.m */,
+				6677A437211D2DD6006EEC09 /* TiledImageView.h */,
+				6677A43C211D2DD6006EEC09 /* TiledImageView.m */,
+				6677A439211D2DD6006EEC09 /* SubView.h */,
+				6677A436211D2DD6006EEC09 /* SubView.m */,
+				66E4D9F2212528B800F4A1E5 /* TextLayerLabel.h */,
+				66E4D9F3212528B800F4A1E5 /* TextLayerLabel.m */,
+				66286CBF212D031100F0F0ED /* CAMediaTimingViewController.h */,
+				66286CC0212D031100F0F0ED /* CAMediaTimingViewController.m */,
+				783158B421CB6536001BD8AC /* MsgForward */,
+				783158B021CB6310001BD8AC /* NSKVONotifying_Class */,
+				783158AF21CB6292001BD8AC /* weak */,
+			);
+			path = objc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,7 +422,6 @@
 				783158B321CB635D001BD8AC /* NSKVONotifying_Class.m in Sources */,
 				783158B721CB654B001BD8AC /* MsgForward.m in Sources */,
 				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
-				66286CC4212D2BFB00F0F0ED /* KitViewController.m in Sources */,
 				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
 				6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */,
 			);

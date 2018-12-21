@@ -27,10 +27,6 @@
 
 @implementation ViewController
 
-- (IBAction)btnSEL:(id)sender {
-    NSLog(@"---");
-}
-
 //避免图层混合
 //
 //确保控件的opaque属性设置为true，确保backgroundColor和父视图颜色一致且不透明。
@@ -62,7 +58,6 @@
     
 //    centerX _rectView.center.x;
 
-    
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint:CGPointMake(175, 100)];
     
