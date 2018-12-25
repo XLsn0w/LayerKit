@@ -4,24 +4,23 @@
 
 @implementation UIControl (RepeatTimeInterval)
 
-static const char *UIControl_acceptEventInterval = "UIControl_acceptEventInterval";
-
-static const char *UIControl_ingoreEvent = "UIControl_ingoreEvent";
-
+///添加属性  属性必须是对象  double->NSNumber
+static const char *key_repeatTimeInterval = "repeatTimeIntervalKey";
 - (NSTimeInterval)repeatTimeInterval {
-    return [objc_getAssociatedObject(self, UIControl_acceptEventInterval)doubleValue];
+    return [objc_getAssociatedObject(self, key_repeatTimeInterval) doubleValue];
 }
 
 - (void)setRepeatTimeInterval:(NSTimeInterval)repeatTimeInterval {
-    objc_setAssociatedObject(self, UIControl_acceptEventInterval,@(repeatTimeInterval),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, key_repeatTimeInterval,@(repeatTimeInterval),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+static const char *key_isRespond = "isRespondKey";
 - (BOOL)isRespond {
-    return [objc_getAssociatedObject(self, UIControl_ingoreEvent) boolValue];
+    return [objc_getAssociatedObject(self, key_isRespond) boolValue];
 }
 
 - (void)setIsRespond:(BOOL)isRespond {
-    objc_setAssociatedObject(self, UIControl_ingoreEvent, @(isRespond), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, key_isRespond, @(isRespond), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 + (void)load {
