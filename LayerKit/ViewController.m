@@ -28,10 +28,11 @@
 @implementation ViewController
 
 //避免图层混合
-//
+
 //确保控件的opaque属性设置为true，确保backgroundColor和父视图颜色一致且不透明。
 //如无特殊需要，不要设置低于1的alpha值。
 //确保UIImage没有alpha通道。
+
 
 
 //避免临时转换
