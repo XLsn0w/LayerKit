@@ -52,7 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *fileURL = [NSURL URLWithString:@"SomeURL"];
+    NSURL *fileURL = [NSURL URLWithString:@"fileURL"];
     
     SystemSoundID theSoundID;
     //OSStatus AudioServicesCreateSystemSoundID(CFURLRef inFileURL,
