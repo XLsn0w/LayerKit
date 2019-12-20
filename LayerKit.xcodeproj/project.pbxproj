@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04FF869323ACB185000C2ABD /* ZYAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF869223ACB185000C2ABD /* ZYAnimationLayer.m */; };
+		04FF869A23ACB324000C2ABD /* text.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FF869923ACB324000C2ABD /* text.plist */; };
+		04FF86A323ACB338000C2ABD /* MANowPlayingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF869C23ACB338000C2ABD /* MANowPlayingControl.m */; };
+		04FF86A423ACB338000C2ABD /* MAPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF86A123ACB338000C2ABD /* MAPlayer.m */; };
+		04FF86A523ACB338000C2ABD /* MAApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF86A223ACB338000C2ABD /* MAApplication.m */; };
+		04FF86A823ACB38A000C2ABD /* ViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF86A723ACB38A000C2ABD /* ViewController+Extension.m */; };
 		660B18712122719700FC880F /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18702122719700FC880F /* UIImage+Add.m */; };
 		660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 660B18752122801D00FC880F /* UIView+RoundCorner.m */; };
 		660B18792122D31E00FC880F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B18782122D31E00FC880F /* Model.swift */; };
@@ -56,6 +62,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04FF869123ACB185000C2ABD /* ZYAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAnimationLayer.h; sourceTree = "<group>"; };
+		04FF869223ACB185000C2ABD /* ZYAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAnimationLayer.m; sourceTree = "<group>"; };
+		04FF869823ACB247000C2ABD /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		04FF869923ACB324000C2ABD /* text.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = text.plist; sourceTree = "<group>"; };
+		04FF869C23ACB338000C2ABD /* MANowPlayingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANowPlayingControl.m; sourceTree = "<group>"; };
+		04FF869D23ACB338000C2ABD /* MAApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAApplication.h; sourceTree = "<group>"; };
+		04FF869E23ACB338000C2ABD /* MAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPlayer.h; sourceTree = "<group>"; };
+		04FF869F23ACB338000C2ABD /* MANowPlayingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANowPlayingControl.h; sourceTree = "<group>"; };
+		04FF86A023ACB338000C2ABD /* MANotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANotifications.h; sourceTree = "<group>"; };
+		04FF86A123ACB338000C2ABD /* MAPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPlayer.m; sourceTree = "<group>"; };
+		04FF86A223ACB338000C2ABD /* MAApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplication.m; sourceTree = "<group>"; };
+		04FF86A623ACB38A000C2ABD /* ViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Extension.h"; sourceTree = "<group>"; };
+		04FF86A723ACB38A000C2ABD /* ViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Extension.m"; sourceTree = "<group>"; };
 		660B186F2122719700FC880F /* UIImage+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Add.h"; sourceTree = "<group>"; };
 		660B18702122719700FC880F /* UIImage+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Add.m"; sourceTree = "<group>"; };
 		660B18742122801D00FC880F /* UIView+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorner.h"; sourceTree = "<group>"; };
@@ -137,13 +156,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66C60B9B211AF56200B63F8F = {
+		04FF869723ACB226000C2ABD /* config */ = {
 			isa = PBXGroup;
 			children = (
+				04FF869B23ACB338000C2ABD /* MAPlayer */,
 				66C60BD9211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.h */,
 				66C60BDA211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m */,
 				66E9C2562137B4AC00C8ED66 /* DoubleWaves.h */,
 				66E9C2572137B4AD00C8ED66 /* DoubleWaves.m */,
+				04FF869823ACB247000C2ABD /* Header.h */,
+				04FF869923ACB324000C2ABD /* text.plist */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		04FF869B23ACB338000C2ABD /* MAPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				04FF869C23ACB338000C2ABD /* MANowPlayingControl.m */,
+				04FF869D23ACB338000C2ABD /* MAApplication.h */,
+				04FF869E23ACB338000C2ABD /* MAPlayer.h */,
+				04FF869F23ACB338000C2ABD /* MANowPlayingControl.h */,
+				04FF86A023ACB338000C2ABD /* MANotifications.h */,
+				04FF86A123ACB338000C2ABD /* MAPlayer.m */,
+				04FF86A223ACB338000C2ABD /* MAApplication.m */,
+			);
+			path = MAPlayer;
+			sourceTree = "<group>";
+		};
+		66C60B9B211AF56200B63F8F = {
+			isa = PBXGroup;
+			children = (
+				04FF869723ACB226000C2ABD /* config */,
 				78A5B85621CCE08800378563 /* objc */,
 				78A5B85521CCE07900378563 /* swift */,
 				66C60BA6211AF56200B63F8F /* LayerKit */,
@@ -170,6 +214,8 @@
 				66C60BA8211AF56200B63F8F /* AppDelegate.m */,
 				66C60BAA211AF56200B63F8F /* ViewController.h */,
 				66C60BAB211AF56200B63F8F /* ViewController.m */,
+				04FF86A623ACB38A000C2ABD /* ViewController+Extension.h */,
+				04FF86A723ACB38A000C2ABD /* ViewController+Extension.m */,
 				66C60BAD211AF56200B63F8F /* Main.storyboard */,
 				66C60BB0211AF56300B63F8F /* Assets.xcassets */,
 				66C60BB2211AF56300B63F8F /* LaunchScreen.storyboard */,
@@ -240,6 +286,8 @@
 		78A5B85621CCE08800378563 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				04FF869123ACB185000C2ABD /* ZYAnimationLayer.h */,
+				04FF869223ACB185000C2ABD /* ZYAnimationLayer.m */,
 				660B186F2122719700FC880F /* UIImage+Add.h */,
 				660B18702122719700FC880F /* UIImage+Add.m */,
 				667D6CD121212C5B00E99C0F /* CAShapeLayer+RoundCorner.h */,
@@ -331,7 +379,7 @@
 		66C60B9C211AF56200B63F8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = XL;
 				TargetAttributes = {
 					66C60BA3211AF56200B63F8F = {
@@ -376,6 +424,7 @@
 				66C60BB4211AF56300B63F8F /* LaunchScreen.storyboard in Resources */,
 				783158B921CB7344001BD8AC /* 消息转发机制.png in Resources */,
 				66C60BB1211AF56300B63F8F /* Assets.xcassets in Resources */,
+				04FF869A23ACB324000C2ABD /* text.plist in Resources */,
 				66C60BAF211AF56200B63F8F /* Main.storyboard in Resources */,
 				667D6CD52121506C00E99C0F /* download.jpg in Resources */,
 			);
@@ -404,9 +453,11 @@
 			files = (
 				66C60BDB211AF6AB00B63F8F /* UIControl+RepeatTimeInterval.m in Sources */,
 				66C60BAC211AF56200B63F8F /* ViewController.m in Sources */,
+				04FF86A423ACB338000C2ABD /* MAPlayer.m in Sources */,
 				66E4D9F4212528B800F4A1E5 /* TextLayerLabel.m in Sources */,
 				783158BC21CB813D001BD8AC /* weakProperty.m in Sources */,
 				6677A441211D2DD6006EEC09 /* SubView.m in Sources */,
+				04FF86A323ACB338000C2ABD /* MANowPlayingControl.m in Sources */,
 				660B18762122801D00FC880F /* UIView+RoundCorner.m in Sources */,
 				660B18712122719700FC880F /* UIImage+Add.m in Sources */,
 				667D6CD321212C5B00E99C0F /* CAShapeLayer+RoundCorner.m in Sources */,
@@ -416,6 +467,7 @@
 				66286CC1212D031100F0F0ED /* CAMediaTimingViewController.m in Sources */,
 				6677A443211D2DD6006EEC09 /* TiledImageView.m in Sources */,
 				6677A43F211D2DD6006EEC09 /* DrawViewController.m in Sources */,
+				04FF86A823ACB38A000C2ABD /* ViewController+Extension.m in Sources */,
 				6677A440211D2DD6006EEC09 /* SelectorViewController.m in Sources */,
 				66C60BB7211AF56300B63F8F /* main.m in Sources */,
 				66C60BA9211AF56200B63F8F /* AppDelegate.m in Sources */,
@@ -423,7 +475,9 @@
 				783158B721CB654B001BD8AC /* MsgForward.m in Sources */,
 				6677A446211D2E08006EEC09 /* LayerViewController.swift in Sources */,
 				6677A43D211D2DD6006EEC09 /* DrawView.m in Sources */,
+				04FF869323ACB185000C2ABD /* ZYAnimationLayer.m in Sources */,
 				6677A442211D2DD6006EEC09 /* ImageScrollView.m in Sources */,
+				04FF86A523ACB338000C2ABD /* MAApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +638,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

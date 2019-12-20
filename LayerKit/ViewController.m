@@ -12,6 +12,7 @@
 #import "UIView+RoundCorner.h"
 #import "DoubleWaves.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "ViewController+Extension.h"
 
 @interface ViewController ()
 
@@ -51,6 +52,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initAll];
     
     NSURL *fileURL = [NSURL URLWithString:@"fileURL"];
     

@@ -1,0 +1,31 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "app": "node ./app.js",
+    "start": "pm2 start ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.yingzhongtong.com:bj_fe/tools/mockServer.git"
+  },
+  "author": "liux",
+  "license": "ISC",
+  "dependencies": {
+    "aw-fs": "^1.0.2",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "rmdir": "^1.2.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "typings": "./index.d.ts",
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "mysql": "^2.14.1"
+  }
+}

@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Header.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MAPlayerDelegate>
 
+@property (nonatomic, strong) NSMutableArray *imagesArray;
+
+@property (nonatomic, weak) UIScrollView *scrollView;
+
+@property (nonatomic, strong) NSArray *textArray;
+
+@property (nonatomic, strong) NSTimer *time;
+
+@property (nonatomic, assign) BOOL isStop;
 
 @end
-
