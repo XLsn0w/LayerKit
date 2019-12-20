@@ -11,6 +11,7 @@
 #import "UIControl+RepeatTimeInterval.h"
 #import "UIView+RoundCorner.h"
 #import "DoubleWaves.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController ()
 
@@ -50,6 +51,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSURL *fileURL = [NSURL URLWithString:@"SomeURL"];
+    
+    SystemSoundID theSoundID;
+    //OSStatus AudioServicesCreateSystemSoundID(CFURLRef inFileURL,
+    //                             SystemSoundID *outSystemSoundID);
+    OSStatus error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)fileURL, &theSoundID);
+    
     
     DoubleWaves *doubleWaves = [[DoubleWaves alloc]initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width, 26)];
     [self.view addSubview:doubleWaves];
